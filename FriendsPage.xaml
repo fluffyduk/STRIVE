@@ -6,7 +6,7 @@
         <Label 
             Text="Этот раздел ещё находится в разработке!"
             Margin="10"
-            FontSize="42"
+            FontSize="12"
             HorizontalTextAlignment="Center"
             VerticalTextAlignment="Center"
             />
