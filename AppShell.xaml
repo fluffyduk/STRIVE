@@ -11,7 +11,8 @@
         <ShellContent
             Title="Тренировки"
             ContentTemplate="{DataTemplate local:Trainings}"
-            Icon="{OnPlatform 'trainings.png', iOS='icon_notes_ios.png', MacCatalyst='icon_notes_ios.png'}" />
+            Icon="{OnPlatform 'trainings.png'}"
+            />
 
         <ShellContent
             Title="Календарь"
@@ -25,7 +26,7 @@
         
         <ShellContent
             Title="Профиль"
-            ContentTemplate="{DataTemplate local:FriendsPage}"
+            ContentTemplate="{DataTemplate local:ProfilePage}"
             Icon="{OnPlatform 'profile.png'}" />
     </TabBar>
 </Shell>

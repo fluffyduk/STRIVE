@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="STRIVE.Trains.WithInventory.Arms.dumbbellsdividing">
+    <ScrollView>
+    <VerticalStackLayout>
+        <Label 
+            Text="Разведение гантелей"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="35"
+            FontFamily="Garamond700"/>
+        <Image Source="dumbbells.gif"
+               VerticalOptions="Center" 
+               HorizontalOptions="Center"
+               IsAnimationPlaying ="True"/>
+        <HorizontalStackLayout
+            Spacing="43"
+            >
+            <Button BackgroundColor="IndianRed"
+                HorizontalOptions="Start"
+                Text="Предупреждение"
+                TextColor="Black"
+                FontFamily="GaramondItalic"
+                FontSize="20"
+                Margin="5, 5, 0, 0"
+                HeightRequest="50"
+                WidthRequest="170"
+                />
+            <Button BackgroundColor="Cyan"
+                HorizontalOptions="EndAndExpand"
+                Text="Примечание"
+                TextColor="Black"
+                FontFamily="GaramondItalic"
+                FontSize="20"
+                Margin="0, 5, 0, 0"
+                HeightRequest="50"
+                WidthRequest="170"
+                />
+        </HorizontalStackLayout>
+        <Label Text="Техника выполнения:"
+               FontSize="32"
+               FontFamily="Garamond700"
+               HorizontalOptions="Start"
+            />
+        <Label Text="1.	Возьмите гантели и займите положение на скамье."
+               FontSize="20"
+               FontFamily="Garamond400"
+               HorizontalOptions="Start"
+            />
+        <Label Text="2.	Лежа на спине, согните ноги в коленях и упритесь стопами в пол."
+               FontSize="20"
+               FontFamily="Garamond400"
+               HorizontalOptions="Start"
+            />
+        <Label Text="3.	Чуть прогнитесь в пояснице."
+               FontSize="20"
+               FontFamily="Garamond400"
+               HorizontalOptions="Start"
+            />
+        <Label Text="4.	Руки с гантелями вытяните вертикально вверх."
+               FontSize="20"
+               FontFamily="Garamond400"
+               HorizontalOptions="Start"
+            />
+        <Label Text="5.	Немного согните локти, чтобы снять с них лишнюю нагрузку. Угол сгиба локтей сохраняйте неизменным до конца подхода."
+               FontSize="20"
+               FontFamily="Garamond400"
+               HorizontalOptions="Start"
+            />
+        <Label Text="6.	Плавно разведите руки в стороны."
+               FontSize="20"
+               FontFamily="Garamond400"
+               HorizontalOptions="Start"
+            />
+        <Label Text="7.	Опустите отягощения до уровня плеч или немного ниже. При разведении рук сделайте вдох."
+               FontSize="20"
+               FontFamily="Garamond400"
+               HorizontalOptions="Start"
+            />
+        <Label Text="8.	С силой напрягите грудные мышцы и поднимите гантели в исходную позицию. Траектория движений такая же, как при разведении рук, только гантели движутся в обратном направлении. Подъём гантелей надо сопровождать выдохом."
+               FontSize="20"
+               FontFamily="Garamond400"
+               HorizontalOptions="Start"
+            />
+        <Label Text="9.	В самой высокой точке сделайте короткую остановку, с силой сжав грудные мышцы."
+               FontSize="20"
+               FontFamily="Garamond400"
+               HorizontalOptions="Start"
+            />
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

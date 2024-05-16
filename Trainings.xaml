@@ -4,26 +4,39 @@
     <ScrollView>
         <VerticalStackLayout>
             <ImageButton Source="ass.png"
+                         Command="{Binding AddCommand}"
+                         CommandParameter="Ass"
                          Clicked="OnImageButtonClicked"
                          Margin="20,30,20,60"
                          />
             <ImageButton Source="arms.png"
+                         Command="{Binding AddCommand}"
+                         CommandParameter="Arms"
                          Clicked="OnImageButtonClicked"
                          Margin="20,0,20,60"
+                         x:Name="Arms"
                          /> 
             <ImageButton Source="yoga.png"
+                         Command="{Binding AddCommand}"
+                         CommandParameter="Yoga"
                          Clicked="OnImageButtonClicked"
                          Margin="20,0,20,60"
                          />
             <ImageButton Source="abs.png"
+                         Command="{Binding AddCommand}"
+                         CommandParameter="Abs"
                          Clicked="OnImageButtonClicked"
                          Margin="20,0,20,60"
                          />
             <ImageButton Source="legs.png"
+                         Command="{Binding AddCommand}"
+                         CommandParameter="Legs"
                          Clicked="OnImageButtonClicked"
                          Margin="20,0,20,60"
                          />
             <ImageButton Source="cardio.png"
+                         Command="{Binding AddCommand}"
+                         CommandParameter="Cardio"
                          Clicked="OnImageButtonClicked"
                          Margin="20,0,20,10"
                          />

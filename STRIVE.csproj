@@ -40,10 +40,11 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
-
+		<MauiIcon Include="Resources\AppIcon\icon.png" BaseSize="128,128" />
+				
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
+		
+		<MauiSplashScreen Include="Resources\Splash\tempsplash.png" Color="#191722" BaseSize="128,128"/>
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
@@ -57,16 +58,33 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\AppIcon\appicon.svg" />
+	  <None Remove="Resources\AppIcon\appiconfg.svg" />
+	  <None Remove="Resources\AppIcon\icon.png" />
+	  <None Remove="Resources\AppIcon\icon.svg" />
+	  <None Remove="Resources\Fonts\EBGaramond-Bold.ttf" />
+	  <None Remove="Resources\Fonts\EBGaramond-Italic.ttf" />
+	  <None Remove="Resources\Fonts\EBGaramond-Regular.ttf" />
 	  <None Remove="Resources\Images\abs.png" />
 	  <None Remove="Resources\Images\arms.png" />
+	  <None Remove="Resources\Images\barbellsquat.png" />
+	  <None Remove="Resources\Images\biceps.gif" />
+	  <None Remove="Resources\Images\bicepsonknee.png" />
 	  <None Remove="Resources\Images\calendar.png" />
 	  <None Remove="Resources\Images\cardio.png" />
+	  <None Remove="Resources\Images\dumbbellsdividing.png" />
 	  <None Remove="Resources\Images\Frame 1.png" />
 	  <None Remove="Resources\Images\friends.png" />
 	  <None Remove="Resources\Images\legs.png" />
 	  <None Remove="Resources\Images\profile.png" />
 	  <None Remove="Resources\Images\trainings.png" />
+	  <None Remove="Resources\Images\triceps.gif" />
+	  <None Remove="Resources\Images\tricepsstretching.png" />
+	  <None Remove="Resources\Images\upperpress.png" />
+	  <None Remove="Resources\Images\withinventory.png" />
+	  <None Remove="Resources\Images\withoutinventory.png" />
 	  <None Remove="Resources\Images\yoga.png" />
+	  <None Remove="Resources\Splash\tempsplash.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -80,24 +98,92 @@
 	  <Compile Update="CalendarPage.xaml.cs">
 	    <DependentUpon>CalendarPage.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Cards\LegsWith\barbellsquat.xaml.cs">
+	    <DependentUpon>BarbellSquat.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="FriendsPage.xaml.cs">
 	    <DependentUpon>FriendsPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="ChoosePage.xaml.cs">
+	    <DependentUpon>ChoosePage.xaml</DependentUpon>
 	  </Compile>
 	  <Compile Update="Trainings.xaml.cs">
 	    <DependentUpon>Trainings.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Trains\WithInventory\ChoosingPages\CardioTrainWith.xaml.cs">
+	    <DependentUpon>CardioTrainWith.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Cards\LegsWith\BarbellSquat.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ProfilePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Trains\WithInventory\Arms\BicepsOnKnee.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Trains\WithInventory\Arms\dumbbellsdividing.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Trains\WithInventory\Arms\TricepsStretching.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Trains\WithInventory\Arms\UpperPress.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Trains\WithInventory\ChoosingPages\AbsTrainWith.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Trains\WithInventory\ChoosingPages\ArmsTrainWith.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Trains\WithInventory\ChoosingPages\AssTrainWith.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="CalendarPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="FriendsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="ChoosePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Trainings.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Trains\WithInventory\ChoosingPages\CardioTrainWith.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Trains\WithInventory\ChoosingPages\LegsTrainWith.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Trains\WithInventory\ChoosingPages\YogaTrainWith.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Trains\WithoutInventory\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiAsset Include="Resources\AppIcon\appicon.svg">
+	    <LogicalName>%(RecursiveDir)%(Filename)%(Extension)</LogicalName>
+	  </MauiAsset>
+	  <MauiAsset Include="Resources\AppIcon\appiconfg.svg">
+	    <LogicalName>%(RecursiveDir)%(Filename)%(Extension)</LogicalName>
+	  </MauiAsset>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiImage Include="Resources\Images\gifs\biceps.gif" />
+	  <MauiImage Include="Resources\Images\gifs\dumbbells.gif" />
+	  <MauiImage Include="Resources\Images\gifs\triceps.gif" />
+	  <MauiImage Include="Resources\Images\gifs\upper.gif" />
 	</ItemGroup>
 
 </Project>

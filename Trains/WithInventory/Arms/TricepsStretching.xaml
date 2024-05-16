@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="STRIVE.Trains.WithInventory.Arms.TricepsStretching">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label 
+            Text="Растяжка трицепса"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="35"
+            FontFamily="Garamond700"/>
+            <Image Source="triceps.gif"
+               VerticalOptions="Center" 
+               HorizontalOptions="Center"
+               IsAnimationPlaying ="True"/>
+            <HorizontalStackLayout
+            Spacing="43"
+            >
+                <Button BackgroundColor="IndianRed"
+                HorizontalOptions="Start"
+                Text="Предупреждение"
+                TextColor="Black"
+                FontFamily="GaramondItalic"
+                FontSize="20"
+                Margin="5, 5, 0, 0"
+                HeightRequest="50"
+                WidthRequest="170"
+                />
+                <Button BackgroundColor="Cyan"
+                HorizontalOptions="EndAndExpand"
+                Text="Примечание"
+                TextColor="Black"
+                FontFamily="GaramondItalic"
+                FontSize="20"
+                Margin="0, 5, 0, 0"
+                HeightRequest="50"
+                WidthRequest="170"
+                />
+            </HorizontalStackLayout>
+            <Label Text="Техника выполнения:"
+               FontSize="32"
+               FontFamily="Garamond700"
+               HorizontalOptions="Start"
+            />
+            <Label Text="1.	Не нашла."
+               FontSize="20"
+               FontFamily="Garamond400"
+               HorizontalOptions="Start"
+            />
+            <Label Text="2.	Не нашла."
+               FontSize="20"
+               FontFamily="Garamond400"
+               HorizontalOptions="Start"
+            />
+            <Label Text="3.	Не нашла."
+               FontSize="20"
+               FontFamily="Garamond400"
+               HorizontalOptions="Start"
+            />
+            <Label Text="4.	Не нашла."
+               FontSize="20"
+               FontFamily="Garamond400"
+               HorizontalOptions="Start"
+            />
+            <Label Text="5. Не нашла."
+               FontSize="20"
+               FontFamily="Garamond400"
+               HorizontalOptions="Start"
+            />
+            <Label Text="6.	Не нашла."
+               FontSize="20"
+               FontFamily="Garamond400"
+               HorizontalOptions="Start"
+            />
+            <Label Text="7.	Не нашла."
+               FontSize="20"
+               FontFamily="Garamond400"
+               HorizontalOptions="Start"
+            />
+            <Label Text="8. Не нашла."
+               FontSize="20"
+               FontFamily="Garamond400"
+               HorizontalOptions="Start"
+            />
+            <Label Text="9.	Не нашла."
+               FontSize="20"
+               FontFamily="Garamond400"
+               HorizontalOptions="Start"
+            />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
