@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="STRIVE.Trains.WithInventory.Legs.BolgarVipadi"
+             Title="BolgarVipadi">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label 
+        Text="Болгарские выпады"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center"
+        FontSize="35"
+        FontFamily="Garamond700"/>
+            <Image Source="bolgarvipadi.gif"
+           VerticalOptions="Center" 
+           HorizontalOptions="Center"
+           IsAnimationPlaying ="True"/>
+            <HorizontalStackLayout
+        Spacing="43"
+        >
+                <Button BackgroundColor="IndianRed"
+            HorizontalOptions="Start"
+            Text="Предупреждение"
+            TextColor="Black"
+            FontFamily="GaramondItalic"
+            FontSize="20"
+            Margin="5, 5, 0, 0"
+            HeightRequest="50"
+            WidthRequest="170"
+            />
+                <Button BackgroundColor="Cyan"
+            HorizontalOptions="EndAndExpand"
+            Text="Примечание"
+            TextColor="Black"
+            FontFamily="GaramondItalic"
+            FontSize="20"
+            Margin="0, 5, 0, 0"
+            HeightRequest="50"
+            WidthRequest="170"
+            />
+            </HorizontalStackLayout>
+            <Label Text="Техника выполнения:"
+           FontSize="32"
+           FontFamily="Garamond700"
+           HorizontalOptions="Start"
+        />
+            <Label Text="1.	Сделайте широкий шаг вперед, спина к скамье."
+           FontSize="20"
+           FontFamily="Garamond400"
+           HorizontalOptions="Start"
+        />
+            <Label Text="2.	Одна нога на скамье, другая впереди."
+           FontSize="20"
+           FontFamily="Garamond400"
+           HorizontalOptions="Start"
+        />
+            <Label Text="3.	Руки сложите или положите на пояс."
+           FontSize="20"
+           FontFamily="Garamond400"
+           HorizontalOptions="Start"
+        />
+            <Label Text="4. Держите спину прямо."
+           FontSize="20"
+           FontFamily="Garamond400"
+           HorizontalOptions="Start"
+        />
+            <Label Text="5. Медленно приседайте, опираясь на переднюю ногу."
+           FontSize="20"
+           FontFamily="Garamond400"
+           HorizontalOptions="Start"
+        />
+            <Label Text="6. Опуститесь, пока бедро опорной ноги не будет параллельно полу."
+           FontSize="20"
+           FontFamily="Garamond400"
+           HorizontalOptions="Start"
+        />
+            <Label Text="7. Не выносите колено за носок, держите пятку на земле."
+           FontSize="20"
+           FontFamily="Garamond400"
+           HorizontalOptions="Start"
+        />
+            <Label Text="8. Сзади стоящая нога опускается, но не касается пола."
+           FontSize="20"
+           FontFamily="Garamond400"
+           HorizontalOptions="Start"
+        />
+            <Label Text="9. Оттолкнитесь обратно, используя пятку опорной ноги."
+           FontSize="20"
+           FontFamily="Garamond400"
+           HorizontalOptions="Start"
+        />
+            <Label Text="10. Повторите 10-15 раз на каждую ногу, 3-4 подхода."
+           FontSize="20"
+           FontFamily="Garamond400"
+           HorizontalOptions="Start"
+        />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
