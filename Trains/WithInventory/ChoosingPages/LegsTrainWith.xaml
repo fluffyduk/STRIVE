@@ -3,15 +3,24 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="STRIVE.Trains.WithInventory.LegsTrainWith"
              Title="LegsTrainWith">
-    <VerticalStackLayout>
-        <ImageButton Source="barbellsquat.png"
-             Clicked="OnImageButtonClicked"
-             Margin="20,30,20,60"
-             />
-        <ImageButton Source="legs.png"
-             Clicked="OnImageButtonClicked"
-             Margin="20,0,20,60"
-             x:Name="Arms"
-             />
-    </VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout>
+            <ImageButton Source="barbellsquat.png"
+                 Clicked="barbellsquatd"
+                 Margin="20,30,20,60"
+                 />
+            <ImageButton Source="vipadi.png"
+                 Clicked="BolgarVipadi"
+                 Margin="20,0,20,60"
+                 />
+            <ImageButton Source="razgib.png"
+                 Clicked="legExtension"
+                 Margin="20,0,20,60"
+                 />
+            <ImageButton Source="razgib2.png"
+                 Clicked="razgibNog"
+                 Margin="20,0,20,60"
+                 />
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

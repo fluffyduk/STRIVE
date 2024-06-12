@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="STRIVE.Trains.WithInventory.Legs.razgibNog"
+             Title="razgibNog">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label 
+        Text="Разгибание ног"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center"
+        FontSize="35"
+        FontFamily="Garamond700"/>
+                <Image Source="bolgarvipadi.gif"
+           VerticalOptions="Center" 
+           HorizontalOptions="Center"
+           IsAnimationPlaying ="True"/>
+                <HorizontalStackLayout
+        Spacing="43"
+        >
+                    <Button BackgroundColor="IndianRed"
+            HorizontalOptions="Start"
+            Text="Предупреждение"
+            TextColor="Black"
+            FontFamily="GaramondItalic"
+            FontSize="20"
+            Margin="5, 5, 0, 0"
+            HeightRequest="50"
+            WidthRequest="170"
+            />
+                    <Button BackgroundColor="Cyan"
+            HorizontalOptions="EndAndExpand"
+            Text="Примечание"
+            TextColor="Black"
+            FontFamily="GaramondItalic"
+            FontSize="20"
+            Margin="0, 5, 0, 0"
+            HeightRequest="50"
+            WidthRequest="170"
+            />
+                </HorizontalStackLayout>
+                <Label Text="Техника выполнения:"
+           FontSize="32"
+           FontFamily="Garamond700"
+           HorizontalOptions="Start"
+        />
+            <Label Text="1.	Вдох и выпрямление ног без полной блокировки коленного сустава."
+           FontSize="20"
+           FontFamily="Garamond400"
+           HorizontalOptions="Start"
+        />
+            <Label Text="2.	Задержите дыхание, максимально напрягите квадрицепсы на 1-2 секунды."
+           FontSize="20"
+           FontFamily="Garamond400"
+           HorizontalOptions="Start"
+        />
+            <Label Text="3.	Выдох и плавное сгибание ног в коленях, не доводя до полного сгибания."
+           FontSize="20"
+           FontFamily="Garamond400"
+           HorizontalOptions="Start"
+        />
+            <Label Text="4. Не задерживайтесь в нижней точке, избегая перегрузки мышц."
+           FontSize="20"
+           FontFamily="Garamond400"
+           HorizontalOptions="Start"
+        />
+            <Label Text="5. Без задержки начинайте следующее движение, поддерживая напряжение в квадрицепсах."
+           FontSize="20"
+           FontFamily="Garamond400"
+           HorizontalOptions="Start"
+        />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

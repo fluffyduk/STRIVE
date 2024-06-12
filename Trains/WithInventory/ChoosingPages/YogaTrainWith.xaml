@@ -3,10 +3,29 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="STRIVE.Trains.WithInventory.YogaTrainWith"
              Title="YogaTrainWith">
-    <VerticalStackLayout>
-        <Label 
-            Text="Yoga Training With Metal!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    
+    <ScrollView>
+        <VerticalStackLayout>
+            <ImageButton Source="dumbbellsdividing.png"
+                     Clicked="TreePose"
+         Margin="20,30,20,60"
+         />
+            <ImageButton Source="upperpress.png"
+                     Clicked="ChairPose"
+         Margin="20,0,20,60"
+         />
+            <ImageButton Source="bicepsonknee.png"
+                     Clicked="MountainPose"
+         Margin="20,0,20,60"
+         />
+            <ImageButton Source="tricepsstretching.png"
+                     Clicked="StarPose"
+         Margin="20,0,20,60"
+         />
+            <ImageButton Source="tricepsstretching.png"
+                    Clicked="WarriorPose"
+         Margin="20,0,20,60"
+         />
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
