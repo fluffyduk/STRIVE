@@ -3,15 +3,35 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="STRIVE.CalendarPage"
              xmlns:controls="clr-namespace:Plugin.Maui.Calendar.Controls;assembly=Plugin.Maui.Calendar">
-    <controls:Calendar Events="{Binding Events}"
-                       EventsScrollViewVisible="True">
-        <controls:Calendar.EventTemplate>
-            <DataTemplate>
-                <VerticalStackLayout>
-                    <Label Text="{Binding Name}}"/>
-                    <Label Text="{Binding Descrition}}"/>
-                </VerticalStackLayout>
-            </DataTemplate>
-        </controls:Calendar.EventTemplate>
-    </controls:Calendar>
+    <VerticalStackLayout>
+        <controls:Calendar Events="{Binding Events}"
+                           EventsScrollViewVisible="True"
+                           ArrowsBorderWidth="0"
+                           ArrowsSymbolNext="👉"
+                           ArrowsSymbolPrev="👈"
+                           ArrowsFontSize="25"
+                           MonthLabelColor="Black"
+                           YearLabelColor="Black"
+                           x:Name="cal"
+                           >
+            <controls:Calendar.EventTemplate>
+                <DataTemplate>
+                    <VerticalStackLayout>
+                        <Label Text="{Binding Name}"
+                               Margin="20"
+                               FontSize="25"
+                               FontFamily="Garamond700"/>
+                    </VerticalStackLayout>
+                </DataTemplate>
+            </controls:Calendar.EventTemplate>
+        </controls:Calendar>
+        <Button BackgroundColor="Red"
+                x:Name="addEvent"
+                Text="Добавить событие"
+                TextColor="Black"
+                FontFamily="GaramondItalic"
+                FontSize="16"
+                VerticalOptions="End"
+                Clicked="OnButtonClicked"/>
+    </VerticalStackLayout>
 </ContentPage>

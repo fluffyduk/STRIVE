@@ -31,6 +31,4 @@ public partial class Trainings : ContentPage
 	{
 		await Navigation.PushAsync(new ChoosePage((TypeOfButton)BindingContext));
 	}
-
-
 }

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="STRIVE.Profile.UserInfoPage"
+             Title="UserInfoPage">
+    <VerticalStackLayout>
+        <Label
+            Text="Добавьте свои данные"
+            FontSize="36"
+            FontFamily="Garamond700"
+            TextColor="Black"
+            HorizontalOptions="Center"/>
+        <HorizontalStackLayout>
+            <Label Text="рост"
+                FontSize="28"
+                FontFamily="Garamond400"
+                TextColor="Black"/>
+            <ImageButton Source="plus.png"
+                         Clicked="HeightClick"/>
+            <Label x:Name="heightVisual"
+                   FontSize="28"
+                   FontFamily="Garamond400"
+                   TextColor="Black"
+                   HorizontalOptions="End"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout>
+            <Label Text="вес"
+                FontSize="28"
+                FontFamily="Garamond400"
+                TextColor="Black"/>
+            <ImageButton Source="plus.png"
+                         Clicked="WeightClick"/>
+            <Label x:Name="weightVisual"
+                   FontSize="28"
+                   FontFamily="Garamond400"
+                   TextColor="Black"/>            
+        </HorizontalStackLayout>
+        <HorizontalStackLayout>
+            <Label Text="желаемый вес"
+                FontSize="28"
+                FontFamily="Garamond400"
+                TextColor="Black"/>
+            <ImageButton Source="plus.png"
+                         Clicked="WishClick"/>
+            <Label x:Name="wishWeightVisual"
+                   FontSize="28"
+                   FontFamily="Garamond400"
+                   TextColor="Black"/>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

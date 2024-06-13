@@ -1,12 +1,48 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="STRIVE.ProfilePage"
-             Title="ProfilePage">
-    <VerticalStackLayout>
-        <Label 
-            Text="There is profile!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             x:Class="STRIVE.ProfilePage">
+    <Grid RowSpacing="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Column="0" Grid.Row="0" Text="&#x2022;" FontSize="24"/>
+        <Label Grid.Column="1" 
+               Grid.Row="0" 
+               Text="Информация о пользователе"
+               FontFamily="Garamond400"
+               FontSize="24">
+               <Label.GestureRecognizers>
+                   <TapGestureRecognizer Tapped="InfoClick"/>
+               </Label.GestureRecognizers>
+        </Label>
+
+        <Label Grid.Column="0" Grid.Row="1" Text="&#x2022;" FontSize="24"/>
+        <Label Grid.Column="1" 
+               Grid.Row="1" 
+               Text="Настройки"
+               FontFamily="Garamond400"
+               FontSize="24">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="SettingsClick"/>
+            </Label.GestureRecognizers>
+        </Label>
+
+        <Label Grid.Column="0" Grid.Row="2" Text="&#x2022;" FontSize="24"/>
+        <Label Grid.Column="1" 
+               Grid.Row="2"
+               Text="О приложении"
+               FontFamily="Garamond400"
+               FontSize="24">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="AboutClick"/>
+            </Label.GestureRecognizers>
+        </Label>
+    </Grid>
 </ContentPage>
