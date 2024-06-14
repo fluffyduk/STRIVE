@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="STRIVE.Trains.WithInventory.Legs.Prised"
+             Title="Prised">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label 
+        Text="Присед со штангой"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center"
+        FontSize="35"
+        FontFamily="Garamond700"/>
+            <Image Source="prised.gif"
+           VerticalOptions="Center" 
+           HorizontalOptions="Center"
+           IsAnimationPlaying ="True"/>
+            <HorizontalStackLayout
+        Spacing="43"
+        >
+                <Button BackgroundColor="IndianRed"
+            HorizontalOptions="Start"
+            Text="Предупреждение"
+            TextColor="Black"
+            FontFamily="GaramondItalic"
+            FontSize="20"
+            Margin="5, 5, 0, 0"
+            HeightRequest="50"
+            WidthRequest="170"
+            />
+                <Button BackgroundColor="Cyan"
+            HorizontalOptions="EndAndExpand"
+            Text="Примечание"
+            TextColor="Black"
+            FontFamily="GaramondItalic"
+            FontSize="20"
+            Margin="0, 5, 0, 0"
+            HeightRequest="50"
+            WidthRequest="170"
+            />
+            </HorizontalStackLayout>
+            <Label Text="Техника выполнения:"
+           FontSize="32"
+           FontFamily="Garamond700"
+           HorizontalOptions="Start"
+        />
+            <Label Text="1.	Подходите к штанге на уровне ключиц и возьмите хват шире плеч. Сведите лопатки, выровняйте спину и сделайте один шаг вперед."
+           FontSize="20"
+           FontFamily="Garamond400"
+           HorizontalOptions="Start"
+        />
+            <Label Text="2.	Убедитесь, что ладони плотно зафиксированы, и поднимите штангу так, чтобы лопатки были сведены, а вес лежал на трапеции и задних дельтовидных мышцах."
+           FontSize="20"
+           FontFamily="Garamond400"
+           HorizontalOptions="Start"
+        />
+            <Label Text="3.	Снимите штангу с опоры, шагните назад, держите голову прямо и разведите стопы шире плеч."
+           FontSize="20"
+           FontFamily="Garamond400"
+           HorizontalOptions="Start"
+        />
+            <Label Text="4. Сведите лопатки, наклоните спину вперед и согните колени, не отводя таз назад."
+           FontSize="20"
+           FontFamily="Garamond400"
+           HorizontalOptions="Start"
+        />
+            <Label Text="5. Приседайте глубоко, чтобы таз был ниже колен. Затем плавно разгибайте колени, поднимаясь вверх."
+           FontSize="20"
+           FontFamily="Garamond400"
+           HorizontalOptions="Start"
+/>
+            <Label Text="6. Избегайте резких движений и следите за техникой. Повторяйте упражнение в нужном объеме."
+           FontSize="20"
+           FontFamily="Garamond400"
+           HorizontalOptions="Start"
+/>
+            <Label Text="7. Верните штангу на место, сгибая колени, но не наклоняясь."
+           FontSize="20"
+           FontFamily="Garamond400"
+           HorizontalOptions="Start"
+/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
