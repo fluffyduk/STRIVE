@@ -5,5 +5,6 @@ public partial class BicepsOnKnee : ContentPage
 	public BicepsOnKnee()
 	{
 		InitializeComponent();
+		gif.IsAnimationPlaying = true;
 	}
 }

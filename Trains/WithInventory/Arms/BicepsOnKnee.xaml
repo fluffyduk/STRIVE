@@ -11,10 +11,11 @@
             HorizontalOptions="Center"
             FontSize="35"
             FontFamily="Garamond700"/>
-            <Image Source="biceps.gif"
+            <Image x:Name="gif"
+               Source="biceps.gif"
                VerticalOptions="Center" 
                HorizontalOptions="Center"
-               IsAnimationPlaying ="True"/>
+               IsAnimationPlaying ="False"/>
             <HorizontalStackLayout
             Spacing="43"
             >
