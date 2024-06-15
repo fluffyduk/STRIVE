@@ -27,6 +27,7 @@
                 Margin="5, 5, 0, 0"
                 HeightRequest="50"
                 WidthRequest="170"
+                Clicked="Warning"
                 />
                 <Button BackgroundColor="Cyan"
                 HorizontalOptions="EndAndExpand"
@@ -37,6 +38,7 @@
                 Margin="0, 5, 0, 0"
                 HeightRequest="50"
                 WidthRequest="170"
+                Clicked="Note"
                 />
             </HorizontalStackLayout>
             <Label Text="Техника выполнения:"

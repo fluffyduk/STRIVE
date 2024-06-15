@@ -77,6 +77,7 @@
 	  <None Remove="Resources\Images\friends.png" />
 	  <None Remove="Resources\Images\legs.png" />
 	  <None Remove="Resources\Images\plus.png" />
+	  <None Remove="Resources\Images\prisedcard.png" />
 	  <None Remove="Resources\Images\profile.png" />
 	  <None Remove="Resources\Images\trainings.png" />
 	  <None Remove="Resources\Images\triceps.gif" />

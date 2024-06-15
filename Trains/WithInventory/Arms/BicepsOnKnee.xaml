@@ -16,21 +16,7 @@
                VerticalOptions="Center" 
                HorizontalOptions="Center"
                IsAnimationPlaying ="False"/>
-            <HorizontalStackLayout
-            Spacing="43"
-            >
-                <Button BackgroundColor="IndianRed"
-                HorizontalOptions="Start"
-                Text="Предупреждение"
-                TextColor="Black"
-                FontFamily="GaramondItalic"
-                FontSize="20"
-                Margin="5, 5, 0, 0"
-                HeightRequest="50"
-                WidthRequest="170"
-                />
-                <Button BackgroundColor="Cyan"
-                HorizontalOptions="EndAndExpand"
+            <Button BackgroundColor="Cyan"
                 Text="Примечание"
                 TextColor="Black"
                 FontFamily="GaramondItalic"
@@ -38,8 +24,9 @@
                 Margin="0, 5, 0, 0"
                 HeightRequest="50"
                 WidthRequest="170"
+                Clicked="Note"
+                HorizontalOptions="Center"
                 />
-            </HorizontalStackLayout>
             <Label Text="Техника выполнения:"
                FontSize="32"
                FontFamily="Garamond700"

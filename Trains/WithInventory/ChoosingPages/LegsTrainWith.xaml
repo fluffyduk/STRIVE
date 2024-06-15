@@ -5,7 +5,7 @@
              >
     <ScrollView>
         <VerticalStackLayout>
-            <ImageButton Source="prised.png"
+            <ImageButton Source="prisedcard.png"
                  Clicked="Prised"
                  Margin="20,0,20,60"
                  />
