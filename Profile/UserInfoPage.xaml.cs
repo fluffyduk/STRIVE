@@ -5,13 +5,16 @@ namespace STRIVE.Profile;
 
 public partial class UserInfoPage : ContentPage
 {
-	string height = "SEX";
-	string weight;
-	string wishWeight;
+	string height = Preferences.Get("height", "0");
+	string weight = Preferences.Get("weight", "0");
+	string wishWeight = Preferences.Get("wishWeight", "0");
 
 	public UserInfoPage()
 	{
 		InitializeComponent();
+		heightVisual.Text = height;
+		weightVisual.Text = weight;
+		wishWeightVisual.Text = wishWeight;
 	}
 
 	async void HeightClick(object sender, EventArgs args)

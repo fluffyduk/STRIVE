@@ -48,7 +48,6 @@
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
-		<MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />
 
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
@@ -100,9 +99,6 @@
 	  <Compile Update="CalendarPage.xaml.cs">
 	    <DependentUpon>CalendarPage.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="Cards\LegsWith\barbellsquat.xaml.cs">
-	    <DependentUpon>BarbellSquat.xaml</DependentUpon>
-	  </Compile>
 	  <Compile Update="FriendsPage.xaml.cs">
 	    <DependentUpon>FriendsPage.xaml</DependentUpon>
 	  </Compile>
@@ -118,9 +114,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Cards\LegsWith\BarbellSquat.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
 	  <MauiXaml Update="ProfilePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

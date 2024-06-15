@@ -1,4 +1,4 @@
-using STRIVE.Cards.LegsWith;
+using STRIVE.Trains.WithInventory.Legs;
 
 namespace STRIVE.Trains.WithInventory;
 
@@ -9,8 +9,23 @@ public partial class LegsTrainWith : ContentPage
 		InitializeComponent();
 	}
 
-	async void OnImageButtonClicked(object sender, EventArgs e)
+	async void Prised(object sender, EventArgs e)
 	{
-		await Navigation.PushAsync(new BarbellSquat());
+		await Navigation.PushAsync(new Prised());
+	}
+
+	async void RazgibSecond(object sender, EventArgs e)
+	{
+		await Navigation.PushAsync(new razgibNog());
+	}
+
+	async void Vipadi(object sender, EventArgs e)
+	{
+		await Navigation.PushAsync(new BolgarVipadi());
+	}
+
+	async void RazgibFirst(object sender, EventArgs e)
+	{
+		await Navigation.PushAsync(new legExtension());
 	}
 }

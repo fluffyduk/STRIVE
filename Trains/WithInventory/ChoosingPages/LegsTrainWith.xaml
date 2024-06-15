@@ -2,16 +2,25 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="STRIVE.Trains.WithInventory.LegsTrainWith"
-             Title="LegsTrainWith">
-    <VerticalStackLayout>
-        <ImageButton Source="barbellsquat.png"
-             Clicked="OnImageButtonClicked"
-             Margin="20,30,20,60"
-             />
-        <ImageButton Source="legs.png"
-             Clicked="OnImageButtonClicked"
-             Margin="20,0,20,60"
-             x:Name="Arms"
-             />
-    </VerticalStackLayout>
+             >
+    <ScrollView>
+        <VerticalStackLayout>
+            <ImageButton Source="prised.png"
+                 Clicked="Prised"
+                 Margin="20,0,20,60"
+                 />
+            <ImageButton Source="razgib2.png"
+                 Clicked="RazgibSecond"
+                 Margin="20,0,20,60"
+                 />
+            <ImageButton Source="vipadi.png"
+                 Clicked="Vipadi"
+                 Margin="20,0,20,60"
+                 />
+            <ImageButton Source="razgib.png"
+                 Clicked="RazgibFirst"
+                 Margin="20,0,20,60"
+                 />
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

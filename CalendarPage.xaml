@@ -25,7 +25,7 @@
                 </DataTemplate>
             </controls:Calendar.EventTemplate>
         </controls:Calendar>
-        <Button BackgroundColor="Red"
+        <Button BackgroundColor="Pink"
                 x:Name="addEvent"
                 Text="Добавить событие"
                 TextColor="Black"

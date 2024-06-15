@@ -2,11 +2,29 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="STRIVE.Trains.WithInventory.YogaTrainWith"
-             Title="YogaTrainWith">
-    <VerticalStackLayout>
-        <Label 
-            Text="Yoga Training With Metal!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             >
+    <ScrollView>
+        <VerticalStackLayout>
+            <ImageButton Source="chairpose.jpg"
+                 Clicked="Chair"
+                 Margin="20,0,20,60"
+                 />
+            <ImageButton Source="mountainpose.jpg"
+                 Clicked="Mountain"
+                 Margin="20,0,20,60"
+                 />
+            <ImageButton Source="starpose.jpg"
+                 Clicked="Star"
+                 Margin="20,0,20,60"
+                 />
+            <ImageButton Source="treepose.jpg"
+                 Clicked="Tree"
+                 Margin="20,0,20,60"
+                 />
+            <ImageButton Source="warriorpose.jpg"
+                 Clicked="Warrior"
+                 Margin="20,0,20,60"
+                 />
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
