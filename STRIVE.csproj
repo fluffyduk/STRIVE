@@ -76,6 +76,7 @@
 	  <None Remove="Resources\Images\Frame 1.png" />
 	  <None Remove="Resources\Images\friends.png" />
 	  <None Remove="Resources\Images\legs.png" />
+	  <None Remove="Resources\Images\machines.png" />
 	  <None Remove="Resources\Images\plus.png" />
 	  <None Remove="Resources\Images\prisedcard.png" />
 	  <None Remove="Resources\Images\profile.png" />

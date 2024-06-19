@@ -50,4 +50,14 @@ public partial class ChoosePage : ContentPage
 		//		break;
 		//}
 	}
+
+	async void OnImageButtonMachClicked(object sender, EventArgs e)
+	{
+		//switch (typeforchoice)
+		//{
+		//	case "Ass":
+		//		await Navigation.PushAsync();
+		//		break;
+		//}
+	}
 }

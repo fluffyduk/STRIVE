@@ -3,9 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="STRIVE.ChoosePage">
     <VerticalStackLayout>
+        <ImageButton Source="machines.png"
+             Clicked="OnImageButtonMachClicked"
+             Margin="20,30,20,10"
+             />
         <ImageButton Source="withinventory.png"
              Clicked="OnImageButtonWithClicked"
-             Margin="20,30,20,60"
+             Margin="20,0,20,10"
              />
         <ImageButton Source="withoutinventory.png"
              Clicked="OnImageButtonWithoutClicked"
